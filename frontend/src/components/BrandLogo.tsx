@@ -106,7 +106,7 @@ export function BrandLogo({
       {showText && (
         <div className="flex flex-col text-left">
           <span className={`${titleSizes[size]} font-bold tracking-tight text-slate-900 dark:text-white leading-none`}>
-            CET<span className="text-indigo-600 dark:text-indigo-400">Compass</span>
+            CET<span className="text-indigo-600 dark:text-indigo-400">CAMPUS</span>
           </span>
           {showTagline && (
             <span className={`${taglineSizes[size]} font-medium text-slate-500 dark:text-slate-400 leading-tight mt-0.5`}>

@@ -13,7 +13,7 @@ def test_root():
     response = client.get("/")
     assert response.status_code == 200
     data = response.json()
-    assert "CETCompass" in data["message"]
+    assert "CETCAMPUS" in data["message"]
     assert "disclaimer" in data
 
 def test_health_check():

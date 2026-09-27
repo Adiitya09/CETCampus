@@ -14,7 +14,7 @@ export function Footer() {
               <strong className="font-semibold block sm:inline mr-1">
                 Official Educational Advisory & Disclaimer:
               </strong>
-              CETCompass provides data-driven recommendations based on historical cutoff information. Recommendations are informational and do not guarantee admission. This application is an independent educational guidance platform designed to help students analyze historical Maharashtra CET CAP round cutoffs and is <strong>not affiliated with the State Common Entrance Test Cell (CET Cell) or the Directorate of Technical Education (DTE Maharashtra)</strong>. Cutoffs fluctuate annually depending on applicant volume, normalized exam difficulty, and seat capacity.
+              CETCAMPUS provides data-driven recommendations based on historical cutoff information. Recommendations are informational and do not guarantee admission. This application is an independent educational guidance platform designed to help students analyze historical Maharashtra CET CAP round cutoffs and is <strong>not affiliated with the State Common Entrance Test Cell (CET Cell) or the Directorate of Technical Education (DTE Maharashtra)</strong>. Cutoffs fluctuate annually depending on applicant volume, normalized exam difficulty, and seat capacity.
             </div>
           </div>
         </div>
@@ -107,7 +107,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-slate-200 pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 dark:border-slate-800 dark:text-slate-400">
-          <p>© {new Date().getFullYear()} CETCompass. Educational recommendation platform.</p>
+          <p>© {new Date().getFullYear()} CETCAMPUS. Educational recommendation platform.</p>
           <p className="mt-2 sm:mt-0 flex items-center gap-1">
             Engineered with accuracy & care for aspiring engineers.
           </p>

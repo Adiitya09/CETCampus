@@ -1,8 +1,8 @@
-# CETCompass 🧭
+# CETCAMPUS 🧭
 
 ### Navigate Your Engineering Future
 
-> **CETCompass is a data-driven MHT-CET engineering college recommendation platform that helps students discover and compare suitable Maharashtra engineering colleges based on their percentile, branch, seat type, and historical cutoff data.**
+> **CETCAMPUS is a data-driven MHT-CET engineering college recommendation platform that helps students discover and compare Maharashtra engineering colleges using percentile, branch, seat type, and historical cutoff data.**
 
 Built with **Next.js 15, TypeScript, Tailwind CSS, FastAPI, SQLAlchemy, and PostgreSQL / Supabase**, powered by an authentic dataset of **28,377 official historical CAP round cutoff records** across **326 accredited engineering institutions**, **94 disciplines**, and **77 seat categories**.
 
@@ -102,8 +102,10 @@ pip install -r requirements.txt # or: pip install fastapi uvicorn sqlalchemy pyd
 # Ingest the 28,377 cutoff records from data/college_data_cleaned.xlsx:
 python -m backend.app.data.ingest
 
-# Run backend API server:
+# Run backend API server (from project root or inside backend/):
 python -m uvicorn backend.app.main:app --host 127.0.0.1 --port 8000 --reload
+# or if inside backend/ directory:
+# python -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
 ```
 API Documentation will be available at: `http://127.0.0.1:8000/docs`.
 
@@ -163,4 +165,4 @@ Builds all routes with zero TypeScript or linting errors.
 ---
 
 ## ⚖️ Disclaimer
-*CETCompass is an independent academic resource intended solely for educational guidance and option form planning. Real-time admission cutoffs are determined exclusively by the State Common Entrance Test Cell, Government of Maharashtra.*
+*CETCAMPUS is an independent academic resource intended solely for educational guidance and option form planning. Real-time admission cutoffs are determined exclusively by the State Common Entrance Test Cell, Government of Maharashtra.*

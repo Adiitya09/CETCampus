@@ -20,7 +20,7 @@ function PredictRedirectContent() {
     <div className="flex min-h-[60vh] items-center justify-center">
       <div className="flex flex-col items-center gap-3 text-slate-500">
         <Sparkles className="h-8 w-8 text-indigo-600 animate-spin" />
-        <span className="text-sm font-medium">Navigating to CETCompass...</span>
+        <span className="text-sm font-medium">Navigating to CETCAMPUS...</span>
       </div>
     </div>
   );
@@ -28,7 +28,7 @@ function PredictRedirectContent() {
 
 export default function PredictRedirectPage() {
   return (
-    <Suspense fallback={<div className="p-10 text-center">Loading CETCompass...</div>}>
+    <Suspense fallback={<div className="p-10 text-center">Loading CETCAMPUS...</div>}>
       <PredictRedirectContent />
     </Suspense>
   );

@@ -17,10 +17,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CETCompass — Navigate Your Engineering Future",
-  description: "CETCompass helps MHT-CET students discover and compare Maharashtra engineering colleges using percentile, branch, seat type, and historical cutoff data.",
+  title: "CETCAMPUS — Navigate Your Engineering Future",
+  description: "CETCAMPUS helps MHT-CET students discover and compare Maharashtra engineering colleges using percentile, branch, seat type, and historical cutoff data.",
   keywords: [
-    "CETCompass",
+    "CETCAMPUS",
     "MHT-CET College Recommendations",
     "Maharashtra Engineering Colleges",
     "MHT-CET Cutoff Insights",
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
     "Safe Moderate Reach"
   ],
   openGraph: {
-    title: "CETCompass — Navigate Your Engineering Future",
-    description: "CETCompass helps MHT-CET students discover and compare Maharashtra engineering colleges using percentile, branch, seat type, and historical cutoff data.",
+    title: "CETCAMPUS — Navigate Your Engineering Future",
+    description: "CETCAMPUS helps MHT-CET students discover and compare Maharashtra engineering colleges using percentile, branch, seat type, and historical cutoff data.",
     type: "website",
   }
 };

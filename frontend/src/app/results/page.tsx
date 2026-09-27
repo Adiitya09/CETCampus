@@ -123,12 +123,12 @@ function ResultsContent() {
             <div className="flex items-center gap-2 mb-1">
               <span className="inline-flex items-center gap-1.5 rounded-full bg-indigo-50 dark:bg-indigo-950/60 px-3 py-0.5 text-xs font-semibold text-indigo-700 dark:text-indigo-300">
                 <Sparkles className="h-3.5 w-3.5" />
-                CETCompass Discovery
+                CETCAMPUS Discovery
               </span>
               <span className="text-xs text-slate-500">• 28,377 Historical Cutoffs</span>
             </div>
             <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-              Your CETCompass Recommendations
+              Your CETCAMPUS Recommendations
             </h1>
             <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-0.5">
               Matched for <strong className="text-slate-900 dark:text-white">{percentile.toFixed(2)}%ile</strong> • Category: <strong className="text-slate-900 dark:text-white">{seatType}</strong> • Exam: <strong className="text-slate-900 dark:text-white">{scoreType}</strong>

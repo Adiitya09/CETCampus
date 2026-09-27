@@ -183,7 +183,7 @@ function LoginContent() {
             <BrandLogo size="lg" asLink={true} showText={false} />
           </div>
           <h1 className="text-2xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-            {mode === "signin" ? "Sign In to CETCompass" : mode === "signup" ? "Create Student Account" : "Administrator Access"}
+            {mode === "signin" ? "Sign In to CETCAMPUS" : mode === "signup" ? "Create Student Account" : "Administrator Access"}
           </h1>
           <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
             {mode === "signin" 

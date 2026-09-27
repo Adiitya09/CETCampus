@@ -1,4 +1,13 @@
+import sys
+from pathlib import Path
 from contextlib import asynccontextmanager
+
+# Ensure project root is in sys.path so 'backend.app' imports work
+# whether started from project root or inside the backend directory.
+_project_root = str(Path(__file__).resolve().parent.parent.parent)
+if _project_root not in sys.path:
+    sys.path.insert(0, _project_root)
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -28,7 +37,7 @@ app = FastAPI(
     redoc_url="/redoc",
     openapi_url="/openapi.json",
     description=(
-        "Production API for CETCompass — Maharashtra Engineering Recommendations (MHT-CET / JEE Main). "
+        "Production API for CETCAMPUS — Maharashtra Engineering Recommendations (MHT-CET / JEE Main). "
         "Provides transparent, historical cutoff-based recommendations across 326 colleges, "
         "94 branches, and 77 seat categories. All recommendations are historical estimates, "
         "not official admission guarantees."

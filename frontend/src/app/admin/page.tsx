@@ -316,7 +316,7 @@ export default function AdminPage() {
           <div className="mt-8 border-t border-slate-100 dark:border-slate-800 pt-6 text-xs text-slate-400">
             Looking for college recommendations instead?{" "}
             <Link href="/predictor" className="font-semibold text-indigo-600 hover:underline">
-              Go to CETCompass Predictor
+              Go to CETCAMPUS Predictor
             </Link>
           </div>
         </div>

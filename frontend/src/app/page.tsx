@@ -58,7 +58,7 @@ export default function HomePage() {
 
   const faqs = [
     {
-      q: "How does CETCompass determine Safe, Moderate, and Reach categories?",
+      q: "How does CETCAMPUS determine Safe, Moderate, and Reach categories?",
       a: "Our algorithm evaluates your MHT-CET score against verified CAP round cutoff metrics (Minimum, Mean, Maximum, and sample size). If your score is at least 3.0 percentile above the historical cutoff threshold and meets the admitted cohort mean, it is marked Safe. If you are within 0 to 3 percentiles, it is Moderate. If you are within -4.0 percentiles, it is classified as Reach."
     },
     {
@@ -95,7 +95,7 @@ export default function HomePage() {
 
               <div className="space-y-1">
                 <p className="text-base sm:text-lg font-bold text-indigo-600 dark:text-indigo-400 uppercase tracking-wide">
-                  CETCompass
+                  CETCAMPUS
                 </p>
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
                   Navigate Your Engineering Future
@@ -103,7 +103,7 @@ export default function HomePage() {
               </div>
 
               <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-normal">
-                Find engineering colleges that match your MHT-CET percentile, preferred branch, and seat type using historical cutoff data.
+                Make smarter engineering college decisions using MHT-CET percentile, branch preferences, seat categories, and historical cutoff insights.
               </p>
 
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3 pt-1">
@@ -323,7 +323,7 @@ export default function HomePage() {
               Transparent Methodology
             </h2>
             <h3 className="text-3xl font-extrabold text-slate-900 dark:text-white sm:text-4xl">
-              How CETCompass Classifies Your Colleges
+              How CETCAMPUS Classifies Your Colleges
             </h3>
             <p className="mt-3 text-slate-600 dark:text-slate-300 text-sm sm:text-base">
               Unlike black-box tools with fake probabilities, we use actual historical CAP round cutoff statistics (Min, Mean, Max, Cohort Size) to give you honest, actionable guidance.
@@ -428,7 +428,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 5. WHY USE CETCOMPASS */}
+      {/* 5. WHY USE CETCAMPUS */}
       <section className="py-16 sm:py-20 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -437,7 +437,7 @@ export default function HomePage() {
                 Ethical Admissions Guidance
               </h2>
               <h3 className="text-3xl font-extrabold text-slate-900 dark:text-white sm:text-4xl mb-6">
-                Why Students Trust CETCompass
+                Why Students Trust CETCAMPUS
               </h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">

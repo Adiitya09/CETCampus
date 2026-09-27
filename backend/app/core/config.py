@@ -1,11 +1,12 @@
 import os
 import json
+from pathlib import Path
 from typing import List, Any
 from pydantic_settings import BaseSettings
 from pydantic import Field, field_validator
 
 class Settings(BaseSettings):
-    PROJECT_NAME: str = "CETCompass API"
+    PROJECT_NAME: str = "CETCAMPUS API"
     PROJECT_VERSION: str = "1.0.0"
     API_V1_STR: str = "/api"
     ENVIRONMENT: str = Field(default="development", description="development | staging | production")
@@ -25,6 +26,14 @@ class Settings(BaseSettings):
             # Normalize postgres:// to postgresql:// for SQLAlchemy compatibility
             if clean_url.startswith("postgres://"):
                 return clean_url.replace("postgres://", "postgresql://", 1)
+            # If relative SQLite URL, anchor to project root where college_predictor.db resides
+            if clean_url.startswith("sqlite:///"):
+                sub_path = clean_url[len("sqlite:///"):]
+                if not sub_path.startswith("/") and not (len(sub_path) > 1 and sub_path[1] == ":"):
+                    project_root = Path(__file__).resolve().parent.parent.parent.parent
+                    candidate = project_root / sub_path.lstrip("./").lstrip(".\\")
+                    if candidate.exists():
+                        return f"sqlite:///{candidate.as_posix()}"
             return clean_url
         return str(v)
     
