@@ -71,55 +71,55 @@ graph TD
 ```
 ## 📁 Project Structure
 
-
+```text
 CETCampus/
 │
-├── 📂 backend/
-│   ├── 📂 app/
-│   │   ├── 📂 data/
-│   │   ├── 📂 models/
-│   │   ├── 📂 routes/
-│   │   ├── 📂 schemas/
+├── backend/
+│   ├── app/
+│   │   ├── data/
+│   │   ├── models/
+│   │   ├── routes/
+│   │   ├── schemas/
 │   │   └── main.py
 │   │
-│   └── 📂 tests/
+│   └── tests/
 │
-├── 📂 frontend/
-│   ├── 📂 app/
-│   ├── 📂 components/
-│   ├── 📂 public/
+├── frontend/
+│   ├── app/
+│   ├── components/
+│   ├── public/
 │   ├── package.json
 │   └── next.config.ts
 │
-├── 📂 data/
-│   └── 📄 college_data_cleaned.xlsx
+├── data/
+│   └── college_data_cleaned.xlsx
 │
-├── 📂 database/
+├── database/
 │
-├── 📂 docs/
+├── docs/
 │
-├── 📂 pipeline/
+├── pipeline/
 │
-├── 📄 recommendation_service.py
-├── 📄 analyze_thresholds.py
-├── 📄 scratch_audit.py
-├── 📄 data_audit_results.json
+├── recommendation_service.py
+├── analyze_thresholds.py
+├── scratch_audit.py
+├── data_audit_results.json
 │
-├── 📄 requirements.txt
-├── 📄 render.yaml
-├── 📄 mypy.ini
-├── 📄 .env.example
-├── 📄 .gitignore
+├── requirements.txt
+├── render.yaml
+├── mypy.ini
+├── .env.example
+├── .gitignore
 │
-├── 📄 DATA_DICTIONARY.md
-├── 📄 DATA_AUDIT_REPORT.md
-├── 📄 DEPLOYMENT.md
-├── 📄 DEPLOYMENT_READINESS.md
-├── 📄 CORE_FUNCTIONALITY_STATUS.md
-├── 📄 CURRENT_STATUS.md
+├── DATA_DICTIONARY.md
+├── DATA_AUDIT_REPORT.md
+├── DEPLOYMENT.md
+├── DEPLOYMENT_READINESS.md
+├── CORE_FUNCTIONALITY_STATUS.md
+├── CURRENT_STATUS.md
 │
-└── 📄 README.md
-
+└── README.md
+```
 
 ## 🛠️ Tech Stack
 
