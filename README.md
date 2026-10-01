@@ -69,12 +69,97 @@ graph TD
     Client -->|REST API JSON| API
     API -->|SQLAlchemy ORM| DB
 ```
+## 📁 Project Structure
 
-- **Frontend**: Next.js 15, TypeScript, Tailwind CSS v4, Lucide Icons.
-- **Backend**: Python 3.12, FastAPI, Pydantic v2, SQLAlchemy 2.0, Uvicorn.
-- **Database**: PostgreSQL (Supabase) with local SQLite fallback.
-- **Data Pipeline**: Pandas, OpenPyXL.
 
+CETCampus/
+│
+├── 📂 backend/
+│   ├── 📂 app/
+│   │   ├── 📂 data/
+│   │   ├── 📂 models/
+│   │   ├── 📂 routes/
+│   │   ├── 📂 schemas/
+│   │   └── main.py
+│   │
+│   └── 📂 tests/
+│
+├── 📂 frontend/
+│   ├── 📂 app/
+│   ├── 📂 components/
+│   ├── 📂 public/
+│   ├── package.json
+│   └── next.config.ts
+│
+├── 📂 data/
+│   └── 📄 college_data_cleaned.xlsx
+│
+├── 📂 database/
+│
+├── 📂 docs/
+│
+├── 📂 pipeline/
+│
+├── 📄 recommendation_service.py
+├── 📄 analyze_thresholds.py
+├── 📄 scratch_audit.py
+├── 📄 data_audit_results.json
+│
+├── 📄 requirements.txt
+├── 📄 render.yaml
+├── 📄 mypy.ini
+├── 📄 .env.example
+├── 📄 .gitignore
+│
+├── 📄 DATA_DICTIONARY.md
+├── 📄 DATA_AUDIT_REPORT.md
+├── 📄 DEPLOYMENT.md
+├── 📄 DEPLOYMENT_READINESS.md
+├── 📄 CORE_FUNCTIONALITY_STATUS.md
+├── 📄 CURRENT_STATUS.md
+│
+└── 📄 README.md
+
+
+## 🛠️ Tech Stack
+
+### 💻 Frontend Development
+
+![Next.js](https://img.shields.io/badge/NEXT.JS-000000?style=for-the-badge&logo=next.js&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TYPESCRIPT-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/TAILWIND_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Lucide](https://img.shields.io/badge/LUCIDE_ICONS-F56565?style=for-the-badge&logo=lucide&logoColor=white)
+
+### ⚙️ Backend Development
+
+![Python](https://img.shields.io/badge/PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FASTAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![Pydantic](https://img.shields.io/badge/PYDANTIC-E92063?style=for-the-badge&logo=pydantic&logoColor=white)
+![SQLAlchemy](https://img.shields.io/badge/SQLALCHEMY-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white)
+![Uvicorn](https://img.shields.io/badge/UVICORN-499848?style=for-the-badge&logo=python&logoColor=white)
+
+### 📊 Data Processing & Recommendation System
+
+![Pandas](https://img.shields.io/badge/PANDAS-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![OpenPyXL](https://img.shields.io/badge/OPENPYXL-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+![Python](https://img.shields.io/badge/DATA_PROCESSING-3776AB?style=for-the-badge&logo=python&logoColor=white)
+
+### 🗄️ Database & Data Storage
+
+![PostgreSQL](https://img.shields.io/badge/POSTGRESQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Supabase](https://img.shields.io/badge/SUPABASE-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLITE-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+
+### 🧪 Testing & Development
+
+![Pytest](https://img.shields.io/badge/PYTEST-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
+![Git](https://img.shields.io/badge/GIT-F05032?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/GITHUB-181717?style=for-the-badge&logo=github&logoColor=white)
+
+### ☁️ Deployment
+
+![Vercel](https://img.shields.io/badge/VERCEL-000000?style=for-the-badge&logo=vercel&logoColor=white)
+![Render](https://img.shields.io/badge/RENDER-46E3B7?style=for-the-badge&logo=render&logoColor=black)
 ---
 
 ## 🗄️ Database Schema
